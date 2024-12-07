@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("vecteezy_autumn-fall-leaves-background-illustration_24354385.jpg") no-repeat center center/cover; /* Ensure path is correct */
+}
+
+.container {
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+    color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    border: 2px solid rgba(16, 16, 16, 0.2);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(240, 234, 234, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for inputs */
+}
+
+.input-box input::placeholder {
+    color: #555;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888; /* Add color to icons */
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #f6f0f0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+/* MEDIA QUERIES */
+
+/* Adjustments for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 30px;
+    }
+
+    .container h1 {
+        font-size: 28px; /* Adjust font size */
+    }
+
+    .input-box input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .btn {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* Adjustments for Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .input-box {
+        margin: 15px 0;
+    }
+
+    .input-box input {
+        height: 40px;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .remember-forgot {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+    }
+
+    .remember-forgot label {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}
